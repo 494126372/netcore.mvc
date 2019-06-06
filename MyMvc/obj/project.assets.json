@@ -12957,11 +12957,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\工作\\C#\\netCore.Mvc\\MyMvc\\MyMvc.csproj",
+      "projectUniqueName": "D:\\工作\\Git\\netcore.mvc1\\MyMvc\\MyMvc.csproj",
       "projectName": "MyMvc",
-      "projectPath": "D:\\工作\\C#\\netCore.Mvc\\MyMvc\\MyMvc.csproj",
+      "projectPath": "D:\\工作\\Git\\netcore.mvc1\\MyMvc\\MyMvc.csproj",
       "packagesPath": "C:\\Users\\bx017\\.nuget\\packages\\",
-      "outputPath": "D:\\工作\\C#\\netCore.Mvc\\MyMvc\\obj\\",
+      "outputPath": "D:\\工作\\Git\\netcore.mvc1\\MyMvc\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

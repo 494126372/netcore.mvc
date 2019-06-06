@@ -10,6 +10,6 @@
 #忽略bin文件夹
  bin/
 #忽略obj文件夹
-obj/
-
-.vs/
+/obj
+MyMvc/bin/
+MyMvc/.vs/
