@@ -18,7 +18,10 @@ namespace MyMvc.Models
         [Display(Name = "发布 Date")]  //显示的字段名 而不是字段表中名称
         [DataType(DataType.Date)]  // 只显示到天 中文类型
         public DateTime ReleaseDate { get; set; }
-        // 分类
+        // 分类 流派
+        [RegularExpression(@"^[A-Z]+[a-zA-Z""'\s-]*$")]  // 校验
+        [Required]  // 必填
+        [StringLength(30)]
         public string  Genre { get; set; }
 
         [Column(TypeName = "decimal(18, 2)")]

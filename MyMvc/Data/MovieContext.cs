@@ -12,7 +12,7 @@ namespace MyMvc.Models
             : base(options)
         {
         }
-
-        public DbSet<MyMvc.Models.Movie> Movie { get; set; }
+        // 若要启用延迟加载，可以创建导航属性 virtual（Blog.Post 和 Post.Blog）。
+        public virtual DbSet<MyMvc.Models.Movie> Movie { get; set; }
     }
 }

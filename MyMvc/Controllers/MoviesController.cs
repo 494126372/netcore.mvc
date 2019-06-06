@@ -19,9 +19,16 @@ namespace MyMvc.Controllers
         }
 
         // GET: Movies
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string searchString)
         {
-            return View(await _context.Movie.ToListAsync());
+            var movies = from mov in _context.Movie
+                         select mov;
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                movies = movies.Where(e => e.Title.Contains(searchString));
+            }
+            //return View(await _context.Movie.ToListAsync());
+            return View(await movies.ToListAsync());
         }
 
         // GET: Movies/Details/5
