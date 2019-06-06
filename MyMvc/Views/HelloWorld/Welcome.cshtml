@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewData["Title"] = "Welcome";
+}
+
+<p>Welcome?name=''&age=..</p>
+<ul style="font-size:20px">
+    @for (int i = 0; i < (int)ViewData["age"]; i++)
+    {
+    <li> @ViewBag.msg + &nbsp;   Im @{ i.ToString(); } years old!
+        </li> 
+        }
+
+</ul>
+ 
